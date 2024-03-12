@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "waist"
+description="API dispatch in Python"
+authors=[
+    {name = "Jerakin", email="the_rensvind@hotmail.com"},
+]
+license = {text= "MIT"}
+readme = "README.md"
+dynamic = "0.1.0"
+
+requires-python = ">=3.8"
+
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=6",
+    "ruff==0.1.0"
+]
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+
+[project.urls]
+repository = "https://github.com/jerakin/waist"
+
+[tool.ruff]
+target-version = "py38"
+ignore = ["F811"]
