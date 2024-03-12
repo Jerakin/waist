@@ -19,6 +19,7 @@ import bpy  # 3D software Blender API
 
 
 # Set the API that we need to support.
+# the `bpy.app.version` is a version tuple, we join it into a string first.
 api = API(".".join(bpy.app.version))
 
 
