@@ -23,7 +23,7 @@ import bpy  # 3D software Blender API
 api = API(".".join(bpy.app.version))
 
 
-@api(">4")
+@api("<4")
 def f():
     return "Do something that only works in versions before 4."
 
