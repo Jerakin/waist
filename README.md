@@ -1,4 +1,4 @@
-Provide a convenient way to define dispatch depending on outside APIs or other factors.
+Provide a convenient way to define method dispatch depending on outside API version.
 
 # Installation
 
@@ -9,7 +9,7 @@ pip install waist
 ```
 
 # What's This?
-Waist helps you define dispatch methods for externally dependent APIs.
+Waist helps you write code when you depend on external APIs.
 
 
 ```python
